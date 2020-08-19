@@ -14,6 +14,7 @@ function change_level () {
             }
         } else {
             game.showLongText("wrong.", DialogLayout.Bottom)
+            game.showLongText("the answer was " + answer, DialogLayout.Bottom)
             change_level()
         }
     } else if (level == 2) {
@@ -87,7 +88,7 @@ function change_level () {
 }
 function test () {
     game.splash("test")
-    for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < 10; index++) {
         _1 = randint(5, 30)
         _2 = randint(5, 30)
         answer = _1 * _2
@@ -99,6 +100,7 @@ function test () {
             game.showLongText("wrong.", DialogLayout.Bottom)
         }
     }
+    pause(100)
     game.over(true)
 }
 let player_answer = 0
