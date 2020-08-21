@@ -1,8 +1,9 @@
 {
-    "name": "Math",
+    "name": "Math the ghost.",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "Color Fading": "github:jwunderl/pxt-color#v0.1.3"
     },
     "files": [
         "main.blocks",
